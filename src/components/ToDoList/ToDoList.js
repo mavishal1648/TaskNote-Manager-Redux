@@ -15,7 +15,7 @@ function ToDoList() {
     <div className={styles.container}>
     <ul>
       {todos.map((todo,index) => (
-        <li className={styles.item} key={todo.id}>
+        <li className={styles.item} key={index}>
           <span className={styles.content}>{todo.text}</span>
           <span className={todo.completed ? styles.completed:styles.pending}>{todo.completed ? 'Completed': 'Pending'}</span>
           <button className="btn btn-warning"
